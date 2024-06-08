@@ -11,6 +11,8 @@ export const Clock = () => {
       setTime(new Date());
   
     }, 1000);
+
+    return () => clearInterval(interval);
   
   }, []);
 
